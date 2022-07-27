@@ -15,6 +15,25 @@ fn IsLess(a: i32, b: i32) -> Bool {
     return IsPos(b - a);
 }
 
+// Only works for both values positive
+fn IsLessPos(var a: i32, var b: i32) -> Bool {
+    if (a == b) {
+        return false;
+    }
+
+    var d: i32 = b - a;
+    var md: i32 = -d;
+
+    while (not (a == 0) and not (b == 0) and not (d == 0) and not (md == 0)) {
+        a = a - 1;
+        b = b - 1;
+        d = d - 1;
+        md = md - 1;
+    }
+
+    return (a == 0) or (d == 0);
+}
+
 fn MinMax(a: i32, b: i32) -> (i32, i32) {
     if (IsLess(a, b)) {
         return (a, b);

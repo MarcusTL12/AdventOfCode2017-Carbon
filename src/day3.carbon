@@ -1,4 +1,4 @@
-package Day1 api;
+package Day3 api;
 
 let inp: i32 = 289326;
 
@@ -120,7 +120,7 @@ fn Part2() {
     while (not ((hi - lo) == 1)) {
         let mid: i32 = lo + Div(hi - lo, 2);
 
-        if (IsLess(line[mid], inp)) {
+        if (IsLessPos(line[mid], inp)) {
             lo = mid;
         } else {
             hi = mid;
