@@ -1,4 +1,4 @@
-package Day4 api;
+package Day5 api;
 
 let inplen: i32 = 1058;
 let inp: [i32; 1058] = (
