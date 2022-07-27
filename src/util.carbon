@@ -44,3 +44,11 @@ fn Mod(a: i32, b: i32) -> i32 {
     let (_: i32, r: i32) = DivMod(a, b);
     return r;
 }
+
+fn Abs(a: i32) -> i32 {
+    if (IsPos(a)) {
+        return a;
+    } else {
+        return -a;
+    }
+}
