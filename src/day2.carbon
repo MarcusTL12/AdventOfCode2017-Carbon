@@ -52,13 +52,11 @@ fn Part2() {
 
     var i: i32 = 0;
     while (not (i == 16)) {
-        Print("i: {0}", i);
         let row: auto = inp[i];
 
         var found: Bool = false;
         var j: i32 = 0;
         while (not (j == 15) and not found) {
-            Print("j: {0}", j);
             var k: i32 = j + 1;
             while (not (k == 16) and not found) {
                 let (min: i32, max: i32) = MinMax(row[j], row[k]);
